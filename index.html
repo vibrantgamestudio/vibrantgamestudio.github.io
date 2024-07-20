@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibrant Game Studio</title>
+    <style>
+      @font-face {
+        font-family: 'CustomFont';
+        src: url('font.otf') format('opentype');
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4b0076; /* Background color from the image */
+        font-family: 'CustomFont', Arial, sans-serif;
+      }
+      .title {
+        text-align: center;
+        color: #ff69b4; /* Text color from the image */
+        font-size: 5em; /* Default font size for large screens */
+        text-shadow: 2px 2px 0 #ffffff; /* Text shadow for border effect */
+      }
+      @media (max-width: 1200px) {
+        .title {
+          font-size: 4em; /* Font size for medium screens */
+        }
+      }
+      @media (max-width: 768px) {
+        .title {
+          font-size: 3em; /* Font size for small screens */
+        }
+      }
+      @media (max-width: 480px) {
+        .title {
+          font-size: 2em; /* Font size for very small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      Vibrant Game <br />
+      Studio
+    </div>
+  </body>
+</html>
